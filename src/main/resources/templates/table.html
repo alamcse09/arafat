@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        td{
+
+            border: solid;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+
+            <th colspan="2">Data List</th>
+        </thead>
+        <tbody>
+
+            <tr th:each="data:${dataList}">
+                <td th:text="${data.id}"></td>
+                <td th:text="${data.data}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
