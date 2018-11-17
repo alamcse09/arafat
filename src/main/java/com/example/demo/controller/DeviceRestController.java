@@ -26,4 +26,11 @@ public class DeviceRestController {
 
         return dataService.findById( id );
     }
+
+    @RequestMapping( "")
+    public String instruction(){
+
+        return "Go to https://arafatproject.herokuapp.com/post/1  to post a new data. Value written after 'post/' will be saved." +
+                " you will get a id in response. To see a data, go to https://arafatproject.herokuapp.com/get/{id} and give the id at last";
+    }
 }
